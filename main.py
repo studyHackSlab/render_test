@@ -1,20 +1,20 @@
-# from fastapi import FastAPI
+from fastapi import FastAPI
 
-# app = FastAPI()
+app = FastAPI()
 
-# @app.get("/")
-# def index():
-#     return {"Hello": "World"}
+@app.get("/")
+def index():
+    return {"Hello": "World"}
 
 # from flask import Flask, render_template,request
-from flask import Flask
+# from flask import Flask
 
-app = Flask(__name__)
+# app = Flask(__name__)
 
-@app.route('/')
+# @app.route('/')
 
-def hello_world():
-    return "Hello World!"
+# def hello_world():
+#     return "Hello World!"
 
 # def index():
 #     return render_template('index.html', message="名前を入力してください。")
