@@ -10,7 +10,7 @@ from flask import Flask, render_template,request
 
 app = Flask(__name__)
 
-@@app.route('/templates/')
+@app.route('/')
 def index():
     return render_template('index.html', message="名前を入力してください。")
 
